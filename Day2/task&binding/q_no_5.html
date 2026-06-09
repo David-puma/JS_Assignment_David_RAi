@@ -1,0 +1,12 @@
+<button id="btn">Click Me</button>
+<script>
+const person = {
+    name: "Mike",
+
+    showName() {
+        alert(this.name)
+    }
+}
+const button = document.getElementById("btn")
+button.addEventListener("click", person.showName.bind(person))
+</script> 
